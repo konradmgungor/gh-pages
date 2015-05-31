@@ -514,13 +514,15 @@ a:hover, a:focus {
 	margin-bottom: 10%;
 	display: none;
 	z-index: 1004;
+	overflow: hidden;
 	margin:auto;
 
 }
 
 .work-content{
 	position: relative;
-	max-height: 55rem; 
+	max-height: 55rem;
+	overflow: hidden; 
 	overflow-y:auto;
 	padding: 0;
 
@@ -528,4 +530,47 @@ a:hover, a:focus {
 
 .work-content img{
 	max-width: 101%;
+}
+
+.work-info{
+	padding: 2rem;
+}
+
+.work-info h3{
+	font-size: 2rem;
+	font-family: 'Raleway';
+	color: #000;
+	font-weight: 100;
+}
+
+.work-info p{
+	color: #565656;
+	font-size: .8rem;
+	font-weight: 100;
+	margin-bottom: .5rem;
+}
+
+.work-info ul{
+	list-style: none;
+}
+
+.work-info li { 
+    text-indent: -.7em;
+}
+
+.work-info li:before{
+	content: "- ";
+	color: #e64c66;
+
+}
+
+.labels{
+	font-family: 'Raleway';
+	font-size: .8rem;
+	color: #565656;
+	text-transform: uppercase;
+}
+
+.labels-wrap{
+	margin-bottom: .7rem;
 }
