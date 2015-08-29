@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/contentflow.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="js/vendor/modernizr.custom.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   </head>
@@ -23,7 +24,9 @@
       <div class="large-12 columns nopad">
         <div class="h1size"></div>
         <span class="description">I am a UI/UX designer</span>
-        <div class="items"><img class="itemsimg hvr-bob" src="img/items2.png"/></div>    
+        <div class="items">
+       <p class="scroll-down"> scroll down for more info &nbsp;<i class="fa fa-angle-double-down"></i></p>
+          <img class="itemsimg hvr-bob" src="img/items2.png"/></div>    
       </div>
       </div>
 
@@ -60,13 +63,16 @@
                 <img class="item" src="img/phone.png" title="Your_Image_Title"/>
                 <img class="item" href="#sanfran" src="img/phone2.png" title="Your_Image_Title"/>
                 <img class="item" href="#craigslist" src="img/phone1.png" title="Your_Image_Title"/>
-                <img class="item" src="img/phone.png" title="Your_Image_Title"/>
-                <img class="item" src="img/phone.png" title="Your_Image_Title"/>
+                <img class="item" href="#icp" src="img/phone3.png" title="Your_Image_Title"/>
+                <img class="item" href="#rw" src="img/phone.png" title="Your_Image_Title"/>
                 <img class="item" src="img/phone.png" title="Your_Image_Title"/>
                 <!-- Add as many items as you like. -->
             </div>
             
         </div>
+        <div  class="small-12 columns text-center blur2 wow animated fadeIn">
+                  <img src="img/blur.png"/>
+                </div>
 
 
           
@@ -78,6 +84,7 @@
     </div>
   </div>
 <div id ="craigslist" class="row testmodal">
+<a href="#close" title="Close" class="close">x</a>
   <div class="large-12 columns">
     <div class="row testmodal2">
       <div class="large-5 columns work-info">
@@ -96,6 +103,7 @@
   </div>
   </div>
 <div id ="sanfran" class="row testmodal">
+<a href="#close" title="Close" class="close">x</a>
   <div class="large-12 columns">
     <div class="row testmodal2">
       <div class="large-5 columns work-info">
@@ -110,6 +118,46 @@
         <li><p> Product Design</p></li>
       </div>
       <div class="large-7 columns work-content"><img src="img/sfbg.png"/></div>
+    </div>
+  </div>
+  </div>
+
+  <div id ="rw" class="row testmodal">
+  <a href="#close" title="Close" class="close">x</a>
+  <div class="large-12 columns">
+    <div class="row testmodal2">
+      <div class="large-5 columns work-info">
+       <h3>Craigslist Reimagined</h3>
+       <p>To display wire frame process and mock-up techniques, I've redesigned the craigslist app.</p>
+       <hr>
+       <div class="labels-wrap"><span class="labels">What I did</span></div>
+       <ul>
+        <li><p> Product Design</p></li>
+        <li><p> UI/UX Design</p></li>
+        <li><p> Product Design</p></li>
+        <li><p> Product Design</p></li>
+      </div>
+      <div class="large-7 columns work-content"><img src="img/rw.jpg"/></div>
+    </div>
+  </div>
+  </div>
+
+  <div id ="icp" class="row testmodal">
+  <a href="#close" title="Close" class="close">x</a>
+  <div class="large-12 columns">
+    <div class="row testmodal2">
+      <div class="large-5 columns work-info">
+       <h3>Craigslist Reimagined</h3>
+       <p>To display wire frame process and mock-up techniques, I've redesigned the craigslist app.</p>
+       <hr>
+       <div class="labels-wrap"><span class="labels">What I did</span></div>
+       <ul>
+        <li><p> Product Design</p></li>
+        <li><p> UI/UX Design</p></li>
+        <li><p> Product Design</p></li>
+        <li><p> Product Design</p></li>
+      </div>
+      <div class="large-7 columns work-content"><img src="img/ic3.jpg"/></div>
     </div>
   </div>
   </div>
@@ -157,6 +205,9 @@
       // 'opacity' : 1-(scrollPos/1000)
     });
     $('.itemsimg').css({
+      'top' : 1-(scrollPos/4)+'px',
+    });
+    $('.thought').css({
       'top' : 1-(scrollPos/4)+'px',
     });
     $('.exheader').css({
@@ -209,11 +260,6 @@ $('#cl').click(function() {
   classie.add(document.body ,'noscroll');
 });
 
-$( ".testmodal" ).click(function() {
-  $(".testmodal").fadeOut("fast");
-  $(".testmodal2").fadeOut("slow");
-  classie.remove(document.body ,'noscroll');
-});
 </script>
 
 <script>
@@ -223,11 +269,6 @@ $('#sf').click(function() {
   classie.add(document.body ,'noscroll');
 });
 
-$( ".testmodal" ).click(function() {
-  $(".testmodal").fadeOut("fast");
-  $(".testmodal2").fadeOut("slow");
-  classie.remove(document.body ,'noscroll');
-});
 </script>
 
 <script language="JavaScript" type="text/javascript" src="js/vendor/contentflow.js"></script>

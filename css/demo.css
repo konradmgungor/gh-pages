@@ -19,6 +19,23 @@
 .clearfix:before, .clearfix:after { content: ''; display: table; }
 .clearfix:after { clear: both; }
 
+/*thoughtbubble*/
+
+
+.thought-contain{
+	width: 100%;
+
+}
+
+p.scroll-down{
+	padding-left: 1rem;
+	font-size: 1.3rem;
+	color: rgba(255,255,255,.6);
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------------------------------*/
+
 body {
 	background-color: #e64c66;
 	color: #eee;
@@ -122,7 +139,12 @@ h2{
 	padding: 0;
 }
 
+.items{
+	display: block;
+}
+
 .itemsimg{
+	float: right;
 	width: 1100px;
 	position: relative;
 	top: 0;
@@ -492,7 +514,7 @@ a:hover, a:focus {
 /*modals*/
 
 .testmodal{
-	background:rgba(0,0,0,.60);
+	background:rgba(0,0,0,.85);
 	height:100%;
 	max-width:100%;
 	background-size: cover;
@@ -587,6 +609,19 @@ a:hover, a:focus {
 
 .labels-wrap{
 	margin-bottom: .7rem;
+}
+
+.close{
+    color: #FFFFFF;
+    position: absolute;
+    right: 13%;
+    text-align: center;
+    top: 10%;
+}
+.close:hover {
+    background: #00d9ff;
+}
+
 }
 
 .coverflow {
